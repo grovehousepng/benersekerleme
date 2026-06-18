@@ -905,6 +905,7 @@ export default function Home() {
                   if (typeof window !== "undefined") {
                     if ((window as any).fbq) {
                       (window as any).fbq('track', 'Purchase', { value: 350.00, currency: 'TRY' });
+                      (window as any).fbq('track', 'InitiateCheckout', { value: 350.00, currency: 'TRY' });
                     }
                     if ((window as any).ttq) {
                       (window as any).ttq.track('Purchase', { value: 350.00, currency: 'TRY' });
@@ -1310,6 +1311,7 @@ export default function Home() {
                   if (typeof window !== "undefined") {
                     if ((window as any).fbq) {
                       (window as any).fbq('track', 'Purchase', { value: 350.00, currency: 'TRY' });
+                      (window as any).fbq('track', 'InitiateCheckout', { value: 350.00, currency: 'TRY' });
                     }
                     if ((window as any).ttq) {
                       (window as any).ttq.track('Purchase', { value: 350.00, currency: 'TRY' });
@@ -1946,6 +1948,7 @@ export default function Home() {
                     if (typeof window !== "undefined") {
                       if ((window as any).fbq) {
                         (window as any).fbq('track', 'Purchase', { value: 350.00, currency: 'TRY' });
+                        (window as any).fbq('track', 'InitiateCheckout', { value: 350.00, currency: 'TRY' });
                       }
                       if ((window as any).ttq) {
                         (window as any).ttq.track('Purchase', { value: 350.00, currency: 'TRY' });
