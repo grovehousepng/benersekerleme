@@ -904,19 +904,19 @@ export default function Home() {
                 onClick={() => {
                   if (typeof window !== "undefined") {
                     if ((window as any).fbq) {
-                      (window as any).fbq('track', 'Purchase', { value: 350.00, currency: 'TRY' });
-                      (window as any).fbq('track', 'InitiateCheckout', { value: 350.00, currency: 'TRY' });
+                      (window as any).fbq('track', 'Purchase', { value: 500.00, currency: 'TRY' });
+                      (window as any).fbq('track', 'InitiateCheckout', { value: 500.00, currency: 'TRY' });
                     }
                     if ((window as any).ttq) {
-                      (window as any).ttq.track('Purchase', { value: 350.00, currency: 'TRY' });
+                      (window as any).ttq.track('Purchase', { value: 500.00, currency: 'TRY' });
                     }
                     if ((window as any).gtag) {
                       (window as any).gtag('event', 'purchase', {
-                        value: 350.00, currency: 'TRY',
-                        items: [{ item_id: 'colorfest_ticket', item_name: 'ColorFest Konya Bilet', price: 350.00, quantity: 1 }]
+                        value: 500.00, currency: 'TRY',
+                        items: [{ item_id: 'colorfest_ticket', item_name: 'ColorFest Konya Bilet', price: 500.00, quantity: 1 }]
                       });
                       (window as any).gtag('event', 'ticket_click', {
-                        event_category: 'Engagement', event_label: 'Bubilet Ticket Click', value: 350.00, currency: 'TRY'
+                        event_category: 'Engagement', event_label: 'Bubilet Ticket Click', value: 500.00, currency: 'TRY'
                       });
                     }
                   }
@@ -1310,19 +1310,19 @@ export default function Home() {
                 onClick={() => {
                   if (typeof window !== "undefined") {
                     if ((window as any).fbq) {
-                      (window as any).fbq('track', 'Purchase', { value: 350.00, currency: 'TRY' });
-                      (window as any).fbq('track', 'InitiateCheckout', { value: 350.00, currency: 'TRY' });
+                      (window as any).fbq('track', 'Purchase', { value: 500.00, currency: 'TRY' });
+                      (window as any).fbq('track', 'InitiateCheckout', { value: 500.00, currency: 'TRY' });
                     }
                     if ((window as any).ttq) {
-                      (window as any).ttq.track('Purchase', { value: 350.00, currency: 'TRY' });
+                      (window as any).ttq.track('Purchase', { value: 500.00, currency: 'TRY' });
                     }
                     if ((window as any).gtag) {
                       (window as any).gtag('event', 'purchase', {
-                        value: 350.00, currency: 'TRY',
-                        items: [{ item_id: 'colorfest_ticket', item_name: 'ColorFest Konya Bilet', price: 350.00, quantity: 1 }]
+                        value: 500.00, currency: 'TRY',
+                        items: [{ item_id: 'colorfest_ticket', item_name: 'ColorFest Konya Bilet', price: 500.00, quantity: 1 }]
                       });
                       (window as any).gtag('event', 'ticket_click', {
-                        event_category: 'Engagement', event_label: 'Bubilet Ticket Click', value: 350.00, currency: 'TRY'
+                        event_category: 'Engagement', event_label: 'Bubilet Ticket Click', value: 500.00, currency: 'TRY'
                       });
                     }
                   }
@@ -1947,19 +1947,19 @@ export default function Home() {
                   onClick={() => {
                     if (typeof window !== "undefined") {
                       if ((window as any).fbq) {
-                        (window as any).fbq('track', 'Purchase', { value: 350.00, currency: 'TRY' });
-                        (window as any).fbq('track', 'InitiateCheckout', { value: 350.00, currency: 'TRY' });
+                        (window as any).fbq('track', 'Purchase', { value: 500.00, currency: 'TRY' });
+                        (window as any).fbq('track', 'InitiateCheckout', { value: 500.00, currency: 'TRY' });
                       }
                       if ((window as any).ttq) {
-                        (window as any).ttq.track('Purchase', { value: 350.00, currency: 'TRY' });
+                        (window as any).ttq.track('Purchase', { value: 500.00, currency: 'TRY' });
                       }
                       if ((window as any).gtag) {
                         (window as any).gtag('event', 'purchase', {
-                          value: 350.00, currency: 'TRY',
-                          items: [{ item_id: 'colorfest_ticket', item_name: 'ColorFest Konya Bilet', price: 350.00, quantity: 1 }]
+                          value: 500.00, currency: 'TRY',
+                          items: [{ item_id: 'colorfest_ticket', item_name: 'ColorFest Konya Bilet', price: 500.00, quantity: 1 }]
                         });
                         (window as any).gtag('event', 'ticket_click', {
-                          event_category: 'Engagement', event_label: 'Bubilet Ticket Click', value: 350.00, currency: 'TRY'
+                          event_category: 'Engagement', event_label: 'Bubilet Ticket Click', value: 500.00, currency: 'TRY'
                         });
                       }
                     }
