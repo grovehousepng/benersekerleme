@@ -39,3 +39,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Sadece BENER projesi dışındaki her şeyi yoksay
+.gemini/
+OneDrive/Desktop/colorfest*/
+OneDrive/Desktop/nexora/
+OneDrive/Desktop/temizlik/
+*.mp4
+*.mp3
+*.avi
+*.mov
+*.zip
+*.rar
+*.exe
+*.3mf
+*.f3d
+*.NEF
