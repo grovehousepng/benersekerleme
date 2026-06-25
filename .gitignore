@@ -45,6 +45,7 @@ next-env.d.ts
 OneDrive/Desktop/colorfest*/
 OneDrive/Desktop/nexora/
 OneDrive/Desktop/temizlik/
+OneDrive/Desktop/spasibatema/
 *.mp4
 *.mp3
 *.avi
@@ -55,3 +56,16 @@ OneDrive/Desktop/temizlik/
 *.3mf
 *.f3d
 *.NEF
+
+# Kök dizindeki BENER'e ait olmayan dosyalar
+/README.md
+/debug-*.mjs
+/probe-*.mjs
+/eslint.config.mjs
+/next.config.ts
+/package.json
+/package-lock.json
+/test-endpoint.mjs
+/tsconfig.json
+/public/
+/src/
