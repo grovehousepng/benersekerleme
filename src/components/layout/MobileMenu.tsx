@@ -65,7 +65,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, pathnam
             <div>
               {/* Header */}
               <div className="flex items-center justify-between pb-6 border-b border-charcoal">
-                <div className="relative w-36 h-10 overflow-hidden">
+                <div className="relative w-48 h-16 overflow-hidden">
                   <Image
                     src="/images/logo/bener-logo.png"
                     alt="Bener Logo"
