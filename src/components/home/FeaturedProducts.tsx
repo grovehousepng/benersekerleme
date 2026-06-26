@@ -27,7 +27,7 @@ export const FeaturedProducts: React.FC = () => {
           <SectionTitle
             label="ÖZEL SEÇKİ"
             title="Öne Çıkan Lezzetlerimiz"
-            subtitle="En çok tercih edilen çifte kavrulmuş lokumlarımız, geleneksel akidelerimiz ve taze cezeryelerimiz."
+            subtitle="Elvan Şekeri, fındıklı ve fıstıklı Akide Şekerleri ile rengarenk Bayram Şekerleri — en seçkin lezzetlerimiz."
             align="center"
           />
           <OrnamentDivider lineWidth="w-24" className="mb-16" />

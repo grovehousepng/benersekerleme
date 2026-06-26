@@ -11,7 +11,7 @@ import { fadeUpVariant, staggerContainer } from '@/lib/animations';
 export const StorySection: React.FC = () => {
   const stats = [
     { value: '60+', label: 'Yıl Deneyim', desc: 'Yarım asrı aşan üretim birikimi.' },
-    { value: '3', label: 'Ana Ürün Ailesi', desc: 'Şeker, Lokum ve Cezerye uzmanlığı.' },
+    { value: '24', label: 'Aktif Ürün', desc: 'Elvan, Akide, Prens Akide ve Bayram Şekerleri.' },
     { value: '100%', label: 'El Yapımı', desc: 'Geleneksel bakır kazan yöntemleri.' },
   ];
 
@@ -47,7 +47,7 @@ export const StorySection: React.FC = () => {
                 "Ustalık sadece reçeteyi bilmek değil, her kazanda şekerin dilini okuyabilmektir."
               </p>
               <p>
-                Bugün, üretici kimliğimize yakışır premium kalitede şekerler, lokumlar ve cezeryeler hazırlıyoruz. Yapay renklendirici ve katkı maddesi kullanmaksızın, en iyi fıstık, ceviz ve meyve özleri ile ürettiğimiz confections, markamızın imzası haline gelmiştir.
+                Bugün, üretici kimliğimize yakışır premium kalitede şekerler hazırlıyoruz. Geleneksel Elvan Şekerleri'nden, çıtır Akide Şekerleri'ne, zarif Prens Akide'den renkli Bayram Şekerleri'ne — yapay renklendirici ve katkı maddesi kullanmaksızın, en iyi fıstık, ceviz ve meyve özleri ile ürettiğimiz her ürün, Bener'in imzası haline gelmiştir.
               </p>
             </motion.div>
 

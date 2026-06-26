@@ -22,8 +22,8 @@ export default function ProductsPage() {
         <div className="text-center max-w-3xl mx-auto mt-12 mb-16">
           <SectionTitle
             label="BENER KATALOG"
-            title="Saray Esintili Ürün Gruplarımız"
-            subtitle="Doğal malzemelerle, nesiller boyu aktarılan formüllerle hazırladığımız seçkin lezzetler."
+            title="Tüm Ürün Seçkimiz"
+            subtitle="Elvan Şekerleri, Akide Şekerleri, Prens Akide, Nane Şekeri ve Renkli Bayram Şekerleri — her lokmada Konya'nın yüzyıllık geleneği."
             align="center"
           />
           <OrnamentDivider lineWidth="w-32" />

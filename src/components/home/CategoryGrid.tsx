@@ -24,8 +24,8 @@ export const CategoryGrid: React.FC = () => {
         >
           <SectionTitle
             label="TATLI BİR YOLCULUK"
-            title="Ustalık Sınıflarımız"
-            subtitle="Geleneksel lezzetlerimizin asırlık reçetelerle hayat bulduğu üç temel aile."
+            title="Ürün Seçkilerimiz"
+            subtitle="Elvan'dan Akide'ye, Nane'den Bayram Şekeri'ne — Konya'nın köklü geleneğinden ilham alınan iki ana koleksiyon."
             align="center"
           />
           <OrnamentDivider lineWidth="w-24" className="mb-16" />
