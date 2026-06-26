@@ -7,6 +7,10 @@ next-env.d.ts
 .vercel
 OneDrive/
 .gemini/
+debug-*.mjs
+probe-*.mjs
+test-endpoint.mjs
+README.md
 *.mp4
 *.mp3
 *.zip
