@@ -53,8 +53,6 @@ export const Navbar: React.FC = () => {
       dropdown: [
         { name: 'Tüm Ürünler', href: '/urunler' },
         { name: 'Şekerler', href: '/urunler/seker' },
-        { name: 'Lokumlar', href: '/urunler/lokum' },
-        { name: 'Cezeryeler', href: '/urunler/cezerye' },
         { name: 'Bayram Şekerleri', href: '/urunler/bayram-sekeri' },
       ],
     },
@@ -101,7 +99,7 @@ export const Navbar: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center group -ml-5 sm:-ml-6 lg:ml-0">
+            <Link href="/" className="flex items-center group ml-3 sm:ml-0 lg:ml-0">
               <div 
                 className={`relative transition-all duration-500 overflow-hidden translate-y-1 ${
                   scrollState === 'top'
