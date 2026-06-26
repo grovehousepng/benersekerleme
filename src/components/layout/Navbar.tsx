@@ -100,11 +100,11 @@ export const Navbar: React.FC = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center group -ml-8 sm:-ml-6 lg:ml-0">
-              <div 
-                className={`relative transition-all duration-500 overflow-hidden translate-y-1 ${
+              <div
+                className={`relative transition-all duration-500 overflow-hidden ${
                   scrollState === 'top'
-                    ? 'w-56 h-18 sm:w-72 sm:h-22 md:w-80 md:h-24 -my-3.5 lg:-my-5'
-                    : 'w-44 h-14 sm:w-48 sm:h-16 md:w-52 md:h-16 -my-2 lg:-my-3'
+                    ? 'w-40 h-14 sm:w-48 sm:h-16'
+                    : 'w-32 h-10 sm:w-36 sm:h-12'
                 }`}
               >
                 <Image
