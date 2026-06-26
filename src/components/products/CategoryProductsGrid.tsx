@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Product } from '@/types';
 import { ProductCard } from './ProductCard';
-import { staggerContainer } from '@/lib/animations';
 
 interface CategoryProductsGridProps {
   products: Product[];
@@ -48,9 +47,6 @@ export const CategoryProductsGrid: React.FC<CategoryProductsGridProps> = ({ prod
       {/* Products Grid */}
       {filteredProducts.length > 0 ? (
         <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          animate="visible"
           layout
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
         >
