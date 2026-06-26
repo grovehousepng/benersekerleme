@@ -97,9 +97,9 @@ export const Navbar: React.FC = () => {
     <>
       <header className={getHeaderClass()}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center w-full">
+          <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center group -ml-8 sm:-ml-6 lg:ml-0 flex-shrink-0">
+            <Link href="/" className="flex items-center group -ml-8 sm:-ml-6 lg:ml-0">
               <div 
                 className={`relative transition-all duration-500 overflow-hidden translate-y-1 ${
                   scrollState === 'top'
@@ -118,7 +118,7 @@ export const Navbar: React.FC = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-5 xl:space-x-8 flex-1 justify-center">
+            <nav className="hidden lg:flex items-center space-x-5 xl:space-x-8">
               {navLinks.map((link) => {
                 if (link.dropdown) {
                   return (
@@ -178,7 +178,7 @@ export const Navbar: React.FC = () => {
             </nav>
 
             {/* CTA Button */}
-            <div className="hidden lg:block flex-shrink-0">
+            <div className="hidden lg:block">
               <GoldButton
                 href={`tel:${siteConfig.contact.phone1Raw}`}
                 variant={isDarkBg ? 'ghost' : 'outline'}
@@ -190,7 +190,7 @@ export const Navbar: React.FC = () => {
             </div>
 
             {/* Mobile menu button */}
-            <div className="flex lg:hidden flex-1 justify-center items-center">
+            <div className="flex lg:hidden items-center">
               <button
                 onClick={() => setIsMobileMenuOpen(true)}
                 className={`p-2 transition-colors focus:outline-none ${
