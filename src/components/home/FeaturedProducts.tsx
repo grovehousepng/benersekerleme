@@ -7,7 +7,7 @@ import { SectionTitle } from '../ui/SectionTitle';
 import { OrnamentDivider } from '../ui/OrnamentDivider';
 import { GoldButton } from '../ui/GoldButton';
 import { products } from '@/data/products';
-import { staggerContainer, fadeUpVariant } from '@/lib/animations';
+import { fadeUpVariant } from '@/lib/animations';
 
 export const FeaturedProducts: React.FC = () => {
   // Get featured products and limit to maximum 6
@@ -34,17 +34,19 @@ export const FeaturedProducts: React.FC = () => {
         </motion.div>
 
         {/* Products Grid */}
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {featured.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <motion.div
+              key={product.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <ProductCard product={product} />
+            </motion.div>
           ))}
-        </motion.div>
+        </div>
 
         {/* View All Button */}
         <motion.div

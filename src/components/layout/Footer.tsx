@@ -79,6 +79,14 @@ export const Footer: React.FC = () => {
             <ul className="space-y-3 font-body text-sm text-text-muted">
               <li>
                 <Link
+                  href="/urunler"
+                  className="hover:text-gold hover:translate-x-1 inline-block transition-all duration-300"
+                >
+                  Tüm Ürünler
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/urunler/seker"
                   className="hover:text-gold hover:translate-x-1 inline-block transition-all duration-300"
                 >
@@ -87,34 +95,10 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <Link
-                  href="/urunler/lokum"
-                  className="hover:text-gold hover:translate-x-1 inline-block transition-all duration-300"
-                >
-                  Lokum Çeşitleri
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/urunler/cezerye"
-                  className="hover:text-gold hover:translate-x-1 inline-block transition-all duration-300"
-                >
-                  Cezerye Çeşitleri
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/urunler/bayram-sekeri"
                   className="hover:text-gold hover:translate-x-1 inline-block transition-all duration-300"
                 >
                   Bayram Şekerleri
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/urunler"
-                  className="hover:text-gold hover:translate-x-1 inline-block transition-all duration-300"
-                >
-                  Öne Çıkan Ürünler
                 </Link>
               </li>
             </ul>
