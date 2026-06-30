@@ -53,7 +53,8 @@ export const Navbar: React.FC = () => {
       dropdown: [
         { name: 'Tüm Ürünler', href: '/urunler' },
         { name: 'Şekerler', href: '/urunler/seker' },
-        { name: 'Bayram Şekerleri', href: '/urunler/bayram-sekeri' },
+        { name: 'Lokumlar', href: '/urunler/lokum' },
+        { name: 'Cezeryeler', href: '/urunler/cezerye' },
       ],
     },
     { name: 'Hakkımızda', href: '/hakkimizda' },

@@ -95,10 +95,18 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <Link
-                  href="/urunler/bayram-sekeri"
+                  href="/urunler/lokum"
                   className="hover:text-gold hover:translate-x-1 inline-block transition-all duration-300"
                 >
-                  Bayram Şekerleri
+                  Lokum Çeşitleri
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/urunler/cezerye"
+                  className="hover:text-gold hover:translate-x-1 inline-block transition-all duration-300"
+                >
+                  Cezerye Çeşitleri
                 </Link>
               </li>
             </ul>

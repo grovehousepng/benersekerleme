@@ -13,9 +13,14 @@ const backgrounds = [
     description: 'Elvan, Akide, Prens Akide ve Nane - Konya\'nın yuzyıllık gelenegı mermer tezgahta.',
   },
   {
-    url: '/images/hero/hero_bg_bayram.png',
-    title: 'Bayram Sekerleri',
-    description: 'Rengarenk bonbonlar, dolgulu ve cizgili kirma akideler bayram sofralarınızda.',
+    url: '/images/hero/hero_bg_lokum.png',
+    title: 'El Yapımı Lokumlar',
+    description: 'Meyve aromalı, fıstık kaplı cesnili ve sarma lokumlar yumusacık dokuda.',
+  },
+  {
+    url: '/images/hero/hero_bg_cezerye.png',
+    title: 'Geleneksel Cezerye',
+    description: 'Havuc ve kuruyemisle hazırlanan, Mersin usulu kadim cezerye lezzeti.',
   },
 ];
 

@@ -25,7 +25,7 @@ export const CategoryGrid: React.FC = () => {
           <SectionTitle
             label="TATLI BİR YOLCULUK"
             title="Ürün Seçkilerimiz"
-            subtitle="Elvan'dan Akide'ye, Nane'den Bayram Şekeri'ne — Konya'nın köklü geleneğinden ilham alınan iki ana koleksiyon."
+            subtitle="Şeker, Lokum ve Cezerye — Konya'nın köklü geleneğinden ilham alınan üç ana koleksiyon, yüzlerce el yapımı lezzet."
             align="center"
           />
           <OrnamentDivider lineWidth="w-24" className="mb-16" />
@@ -37,7 +37,7 @@ export const CategoryGrid: React.FC = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.15 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-8"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8"
         >
           {categories.map((category) => (
             <motion.div
