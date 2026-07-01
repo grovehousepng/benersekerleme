@@ -73,7 +73,7 @@ export const StorySection: React.FC = () => {
               {/* Image wrapper */}
               <div className="w-full h-full relative overflow-hidden border border-border bg-cream shadow-md">
                 <Image
-                  src="/images/hero/story-workshop.png"
+                  src="/images/hero/story-workshop.avif"
                   alt="Bener Şekerleme Atölyesi ve Bakır Kazanlar"
                   fill
                   sizes="(max-width: 768px) 100vw, 35vw"

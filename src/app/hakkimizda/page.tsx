@@ -71,7 +71,7 @@ export default function AboutPage() {
             <div className="lg:col-span-5 relative aspect-[4/3] w-full border border-border shadow-md overflow-hidden bg-cream-warm group">
               <div className="absolute inset-0 border border-gold/15 translate-x-3 translate-y-3 pointer-events-none z-10" />
               <Image
-                src="/images/categories/seker.png"
+                src="/images/categories/seker.avif"
                 alt="Geleneksel Şeker Üretimi"
                 fill
                 sizes="(max-width: 768px) 100vw, 35vw"

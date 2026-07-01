@@ -8,17 +8,17 @@ import { fadeUpVariant, staggerContainer } from '@/lib/animations';
 
 const backgrounds = [
   {
-    url: '/images/hero/hero_bg_seker.png',
+    url: '/images/hero/hero_bg_seker.avif',
     title: 'Geleneksel Sekerler',
     description: 'Elvan, Akide, Prens Akide ve Nane - Konya\'nın yuzyıllık gelenegı mermer tezgahta.',
   },
   {
-    url: '/images/hero/hero_bg_lokum.png',
+    url: '/images/hero/hero_bg_lokum.avif',
     title: 'El Yapımı Lokumlar',
     description: 'Meyve aromalı, fıstık kaplı cesnili ve sarma lokumlar yumusacık dokuda.',
   },
   {
-    url: '/images/hero/hero_bg_cezerye.png',
+    url: '/images/hero/hero_bg_cezerye.avif',
     title: 'Geleneksel Cezerye',
     description: 'Havuc ve kuruyemisle hazırlanan, Mersin usulu kadim cezerye lezzeti.',
   },
