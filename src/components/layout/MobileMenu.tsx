@@ -34,7 +34,9 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, pathnam
     { name: 'Ana Sayfa', href: '/' },
     { name: 'Tüm Ürünler', href: '/urunler' },
     { name: 'Şekerler', href: '/urunler/seker' },
-    { name: 'Bayram Şekerleri', href: '/urunler/bayram-sekeri' },
+    { name: 'Lokumlar', href: '/urunler/lokum' },
+    { name: 'Cezeryeler', href: '/urunler/cezerye' },
+    { name: 'Paketli Ürünler', href: '/urunler/paketli' },
     { name: 'Hakkımızda', href: '/hakkimizda' },
     { name: 'İletişim', href: '/iletisim' },
   ];
