@@ -55,6 +55,7 @@ export const Navbar: React.FC = () => {
         { name: 'Şekerler', href: '/urunler/seker' },
         { name: 'Lokumlar', href: '/urunler/lokum' },
         { name: 'Cezeryeler', href: '/urunler/cezerye' },
+        { name: 'Paketli Ürünler', href: '/urunler/paketli' },
       ],
     },
     { name: 'Hakkımızda', href: '/hakkimizda' },

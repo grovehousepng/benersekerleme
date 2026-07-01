@@ -31,4 +31,14 @@ export const categories: Category[] = [
     color: 'amber',
     accentHex: '#C97A3A',
   },
+  {
+    slug: 'paketli',
+    name: 'Paketli Ürünler',
+    namePlural: 'Paketli Ürünler',
+    tagline: 'Hazır ikramlık, şık sunumlu paketler.',
+    description: `Bener Paketli Ürünler, en sevilen şeker çeşitlerimizin özenle hazırlanmış, etiketli ve şık sunumlu kutu/paket halleridir. Kapiçino, fındıklı, bademli, susamlı, nane, limon, gül ve rengarenk karışık meyve aromalı seçenekleriyle; hem kendiniz için hem de hediyelik olarak hazır ikramlık arayanların ilk tercihidir. Her paket, Bener kalitesiyle üretilen taze ürünlerle doldurulur.`,
+    heroImage: '/urunler/cok-satanlar/karisik-meyve-aromali-seker.png',
+    color: 'rose',
+    accentHex: '#C9525A',
+  },
 ];

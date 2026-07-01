@@ -109,6 +109,14 @@ export const Footer: React.FC = () => {
                   Cezerye Çeşitleri
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/urunler/paketli"
+                  className="hover:text-gold hover:translate-x-1 inline-block transition-all duration-300"
+                >
+                  Paketli Ürünler
+                </Link>
+              </li>
             </ul>
           </div>
 

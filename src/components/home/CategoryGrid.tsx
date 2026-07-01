@@ -39,7 +39,7 @@ export const CategoryGrid: React.FC = () => {
           viewport={{ once: true, amount: 0.15 }}
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
         >
-          {categories.map((category) => (
+          {categories.filter((c) => c.slug !== 'paketli').map((category) => (
             <motion.div
               key={category.slug}
               variants={fadeUpVariant}

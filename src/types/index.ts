@@ -1,4 +1,4 @@
-export type CategorySlug = 'seker' | 'lokum' | 'cezerye' | 'bayram-sekeri';
+export type CategorySlug = 'seker' | 'lokum' | 'cezerye' | 'paketli' | 'bayram-sekeri';
 
 export interface Category {
   slug: CategorySlug;
