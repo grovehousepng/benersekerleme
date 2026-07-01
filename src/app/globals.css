@@ -143,3 +143,19 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-gold);
 }
+
+/* Çok Satanlar otomatik kayan şerit (marquee) */
+@keyframes bener-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.bener-marquee-track {
+  animation: bener-marquee 50s linear infinite;
+  will-change: transform;
+}
+.bener-marquee-track:hover {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bener-marquee-track { animation: none; }
+}

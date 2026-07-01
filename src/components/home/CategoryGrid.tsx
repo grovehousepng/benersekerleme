@@ -43,6 +43,9 @@ export const CategoryGrid: React.FC = () => {
             <motion.div
               key={category.slug}
               variants={fadeUpVariant}
+            >
+            <Link
+              href={`/urunler/${category.slug}`}
               className="group relative h-[450px] border border-border bg-dark overflow-hidden flex flex-col justify-end p-8"
             >
               {/* Card Background Image */}
@@ -79,15 +82,13 @@ export const CategoryGrid: React.FC = () => {
                 </p>
 
                 <div className="pt-4">
-                  <Link
-                    href={`/urunler/${category.slug}`}
-                    className="font-body text-xs font-bold uppercase tracking-wider text-gold group-hover:text-gold-light inline-flex items-center gap-1.5 transition-colors"
-                  >
+                  <span className="font-body text-xs font-bold uppercase tracking-wider text-gold group-hover:text-gold-light inline-flex items-center gap-1.5 transition-colors">
                     Keşfet
                     <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5" />
-                  </Link>
+                  </span>
                 </div>
               </div>
+            </Link>
             </motion.div>
           ))}
         </motion.div>

@@ -1,49 +1,15 @@
 'use client';
 
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import {
-  motion,
-  useMotionValue,
-  useAnimationFrame,
-  useMotionValueEvent,
-} from 'framer-motion';
 import { bestSellers } from '@/data/bestSellers';
 
 // Şeridi kesintisiz kaydırabilmek için listeyi iki kez basıyoruz.
+// CSS marquee -50% kaydığından iki set birebir aynı olmalı.
 const items = [...bestSellers, ...bestSellers];
 
-const CARD_WIDTH = 260; // px — kart genişliği + boşluk (sürükleme sarması için)
-const SPEED = 40; // px / saniye — otomatik kayma hızı
-
 export const BestSellersStrip: React.FC = () => {
-  const x = useMotionValue(0);
-  const trackRef = useRef<HTMLDivElement>(null);
-  const [isPaused, setIsPaused] = useState(false);
-  const draggingRef = useRef(false);
-
-  // Tek setin toplam genişliği (sarma noktası)
-  const loopWidth = bestSellers.length * CARD_WIDTH;
-
-  // x değerini her zaman [-loopWidth, 0] aralığında tut → sonsuz his
-  const wrap = (value: number) => {
-    let v = value % loopWidth;
-    if (v > 0) v -= loopWidth;
-    return v;
-  };
-
-  useMotionValueEvent(x, 'change', (latest) => {
-    const wrapped = wrap(latest);
-    if (wrapped !== latest) x.set(wrapped);
-  });
-
-  useAnimationFrame((_, delta) => {
-    if (isPaused || draggingRef.current) return;
-    const moveBy = (SPEED * delta) / 1000;
-    x.set(wrap(x.get() - moveBy));
-  });
-
   return (
     <section
       className="relative bg-cream-warm border-y border-border/40 py-10 sm:py-12 overflow-hidden"
@@ -73,40 +39,20 @@ export const BestSellersStrip: React.FC = () => {
         <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-24 z-10 bg-gradient-to-r from-cream-warm to-transparent" />
         <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-24 z-10 bg-gradient-to-l from-cream-warm to-transparent" />
 
-        <motion.div
-          ref={trackRef}
-          className="flex gap-5 cursor-grab active:cursor-grabbing px-6"
-          style={{ x, width: 'max-content' }}
-          drag="x"
-          dragConstraints={{ left: -Infinity, right: Infinity }}
-          dragElastic={0}
-          dragMomentum={false}
-          onDragStart={() => {
-            draggingRef.current = true;
-          }}
-          onDragEnd={() => {
-            draggingRef.current = false;
-          }}
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-        >
+        <div className="bener-marquee-track flex w-max">
           {items.map((item, i) => (
             <Link
               key={`${item.name}-${i}`}
               href={item.href}
-              draggable={false}
-              onClick={(e) => {
-                // Sürükleme sonrası yanlışlıkla tıklamayı engelle
-                if (draggingRef.current) e.preventDefault();
-              }}
-              className="group block w-[240px] flex-shrink-0 select-none"
+              aria-hidden={i >= bestSellers.length}
+              tabIndex={i >= bestSellers.length ? -1 : 0}
+              className="group block w-[240px] flex-shrink-0 mr-5"
             >
-              <div className="relative aspect-square w-full overflow-hidden bg-cream border border-border/60 group-hover:border-gold transition-colors duration-400 shadow-sm">
+              <div className="relative aspect-square w-full overflow-hidden bg-cream border border-border/60 group-hover:border-gold transition-colors duration-300 shadow-sm">
                 <Image
                   src={item.image}
                   alt={item.name}
                   fill
-                  draggable={false}
                   sizes="240px"
                   className="object-contain p-3 transition-transform duration-500 group-hover:scale-105"
                 />
@@ -119,7 +65,7 @@ export const BestSellersStrip: React.FC = () => {
               </div>
             </Link>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
