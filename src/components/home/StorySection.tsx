@@ -11,7 +11,7 @@ import { fadeUpVariant, staggerContainer } from '@/lib/animations';
 export const StorySection: React.FC = () => {
   const stats = [
     { value: '60+', label: 'Yıl Deneyim', desc: 'Yarım asrı aşan üretim birikimi.' },
-    { value: '200+', label: 'Aktif Ürün', desc: 'Şeker, Lokum ve Cezerye koleksiyonları.' },
+    { value: '175+', label: 'Aktif Ürün', desc: 'Şeker, Lokum ve Cezerye koleksiyonları.' },
     { value: '100%', label: 'El Yapımı', desc: 'Geleneksel bakır kazan yöntemleri.' },
   ];
 
