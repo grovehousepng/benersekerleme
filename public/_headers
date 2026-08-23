@@ -1,0 +1,18 @@
+# Cloudflare Pages cache kuralları
+# HTML sayfaları ve veri: her ziyarette sunucudan doğrulansın (eski içerik takılmasın)
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Next.js hash'li statik dosyalar (içerik değişince dosya adı da değişir) — kalıcı cache
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Görseller — kısa süreli cache + doğrulama
+/urunler/foto/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/urunler/cok-satanlar/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/images/*
+  Cache-Control: public, max-age=3600, must-revalidate
